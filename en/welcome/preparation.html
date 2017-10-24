@@ -366,74 +366,67 @@
 <h2 id="preparation">Preparation</h2>
 <hr />
 
-<h5 id="goal-merchants-complete-the-pre-requisite-before-integrating-with-midtrans"><strong><em>Goal:</em></strong> <em>Merchants complete the pre-requisite before integrating with Midtrans</em></h5>
+<h5 id="goal-to-complete-all-the-pre-requisites-before-integrating-with-midtrans"><strong><em>Goal:</em></strong> <em>To complete all the pre-requisites before integrating with Midtrans</em></h5>
 <hr />
 
-<p>There are a few pre-requisite before integrating with Midtrans:</p>
+<p>There are some pre-requisites you need to do before integrating with Midtrans:</p>
 
-<h3 id="step1">1. Register to Midtrans Sandbox/Production account.</h3>
+<h3 id="step1">1. Register to Midtrans’ Sandbox (and Production) account.</h3>
 
-<p>Midtrans has one central login to access both production and sandbox account. Sandbox is utilized for development period while production is utilized when the merchant has completed the integration process and want to go live. Data and transaction made on sandbox account will not trigger an actual purchase while in production account will trigger an actual process. Register for Midtrans Sandbox/Production account <a href="https://account.midtrans.com/register">here</a>. </p>
+<p>Please register to Midtrans by completing your information <a href="https://account.midtrans.com/register">here</a>. You will then be given access to your Merchant Administration Portal (MAP), where you shall have access to both sandbox and production environment. You can use the sandbox environment during your development phase of integrating Midtrans’ payments system. You can also test dummy transactions on sandbox environment. The production environment is also available, but your production credentials will only be ready once you have completed all the necessary administrative steps.  </p>
 
-<p>Once logged in, there will be a small button on the header of the dashboard that shows you on whether you are in the production or sandbox environment. The color of nagivation sidebar are also set different between Production (light blue) and Sandbox (dark blue) for further clarity.</p>
+<p>You can toggle between sandbox and production environment from the button on the top left of your MAP. The light and dark shade of blue indicate production and sandbox mode respectively.</p>
 
 <p><img alt="production" class="img-responsive img-thumbnail" src="../../images/welcome/production.png" />
 <br />
-<img alt="sandbox" class="img-responsive img-thumbnail" src="../../images/welcome/sandbox.png" /></p>
+<img alt="sandbox" class="img-responsive img-thumbnail" src="../../images/welcome/sandbox.png" />
+<br /><br /></p>
 
-<p><br /></p>
+<h3 id="step2">2. Complete the required information in your Merchant Administration Portal (MAP)</h3>
 
-<h3 id="step2">2. Fill in the required information in Merchant Admin Portal (MAP).</h3>
-
-<p>The required fields can be found under <a title="General Settings" href="https://dashboard.sandbox.midtrans.com/settings/general_info">Settings - General Settings</a>.<br /></p>
+<p>Please complete the required information in the General Settings menu <a title="General Settings" href="https://dashboard.sandbox.midtrans.com/settings/general_info">Settings &gt; General Settings</a>.<br /></p>
 
 <p><img alt="General Setting" class="img-responsive img-thumbnail" src="../../images/welcome/gen_set.png" /></p>
 
-<div class="alert alert-danger" role="alert">
-  <p><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"><strong>Warning!</strong> </span>
-  <span class="sr-only">Warning!</span></p>
-
-  <ul>
-    <li>Merchant Name: <strong>DO NOT</strong> input symbols.</li>
-    <li>Valid Merchant URL: 
-      <ul>Lesser than 25 char.</ul>
-      <ul>Accepted symbols are ':', '/', '.'.</ul>
-    </li>
-  </ul>
-
+<div class="alert alert-info" role="alert">
+  <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> Note:</span>
+  <span class="sr-only"> Note:</span>
+ <br /> - Please do not use any symbols in Merchant Name.
+ <br /> - Please use less than 25 characters for Merchant URL.</p>
 </div>
+
 <p><br /></p>
 
-<h3 id="step3">3. Take note of your account Access Keys.</h3>
+<h3 id="step3">3. Please take note of your Access Keys</h3>
 
-<p>Your account keys can be found under <a title="Access Keys" href="https://dashboard.sandbox.midtrans.com/settings/config_info">Settings - Access Keys</a><br /></p>
+<p>Access Keys are used to access Midtrans’ API. You can find them in <a title="Access Keys" href="https://dashboard.sandbox.midtrans.com/settings/config_info">Settings &gt; Access Keys</a>.<br /></p>
 
 <p><img alt="Access Keys" class="img-responsive img-thumbnail" src="../../images/welcome/access_key.png" /></p>
 
-<div class="alert alert-warning" role="alert">
-  <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"><strong>Caution!</strong></span>
-  <span class="sr-only">Caution:</span>
- <br />Be discreet on your 'Server Key'.</p>
+<div class="alert alert-danger" role="alert">
+  <p><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"> Warning!</span>
+  <span class="sr-only">Warning!</span>
+ <br />The Access Keys are unique for every merchant. Please always keep it confidential.</p>
 </div>
 
 <p><br /></p>
 
 <h3 id="step4">4. Configure Redirection URL</h3>
 
-<p>Customer will be returned to your website after payment process is completed. </p>
+<p>Redirection URL is used to redirect your customer after the payment process through Midtrans is completed. Please refer to the diagram below on how redirection URLs are being handled.</p>
 
 <p><img alt="vtweb-diagram" class="img-responsive img-thumbnail" src="../../images/welcome/vtweb-diagram.png" /></p>
 
-<p>Go to <a href="https://dashboard.sandbox.midtrans.com/settings/vtweb_configuration">Settings - Configuration</a> menu to manage the redirection URL.
+<p>To set your redirection URL, please go to <a href="https://dashboard.sandbox.midtrans.com/settings/vtweb_configuration">Settings &gt; Confirguration</a>.
 <br />
 <img alt="redirect_url" class="img-responsive img-thumbnail" src="../../images/welcome/redirect_url.png" />
 <br /></p>
 
-<div class="alert alert-danger" role="alert">
-  <p><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"><strong>Warning!</strong> </span>
-  <span class="sr-only">Warning!</span></p>
+<div class="alert alert-info" role="alert">
+  <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> Note:</span>
+  <span class="sr-only">Info:</span></p>
 
-  <p>Please fill the URL with http:// or https://</p>
+  <p>Do not forget to use http:// or https:// when you fill in your redirection URL.</p>
 
 </div>
 <p><br /></p>
@@ -497,7 +490,7 @@
             <ul class="list-unstyled footer-nav">
               <li><a href="https://www.prismapp.io/features">Features</a></li>
               <li><a href="https://www.prismapp.io/pricing">Pricing</a></li>
-              <li><a href="https://docs.prismapp.io">Technical Documentation</a></li>
+              <li><a href="https://docs.prismapp.io" target="_blank">Technical Documentation</a></li>
             </ul>
           </div>
         </div>
