@@ -278,7 +278,7 @@
         <div class="docs-logo">
             <span>DOCS</span>
         </div>
-        <div class="language-toggle"> English / <a href="../../id/reference/security.html">Bahasa Indonesia</a></div>
+        <div class="language-toggle"> English / <a href="../../id/payment_link/index.html">Bahasa Indonesia</a></div>
         <div class="sidebar-search">
           <form>
             <input type="search" name="q" id="search-field" placeholder="Search">
@@ -330,7 +330,7 @@
             
                 <li>
                     
-                        <a class="parent" href="../payment_link/index.html">Payment Link</a>
+                        <a class="parent" href="index.html">Payment Link</a>
                     
                 </li>
             
@@ -346,15 +346,15 @@
                         <b class="caret"></b>
                         <ul class="child-menu">
                             
-                            <li class=""><a href="test.html">Testing Credential</a></li>
+                            <li class=""><a href="../reference/test.html">Testing Credential</a></li>
                             
-                            <li class=""><a href="address.html">IP Adresses</a></li>
+                            <li class=""><a href="../reference/address.html">IP Adresses</a></li>
                             
-                            <li class="active"><a href="security.html">Security</a></li>
+                            <li class=""><a href="../reference/security.html">Security</a></li>
                             
                             <li class=""><a href="https://status.midtrans.com">System Status</a></li>
                             
-                            <li class=""><a href="docslog.html">Docs Changelog</a></li>
+                            <li class=""><a href="../reference/docslog.html">Docs Changelog</a></li>
                             
                             <li class=""><a href="https://support.midtrans.com">FAQ</a></li>
                             
@@ -374,66 +374,59 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
           </p>
-          <div class="en-reference-security">
-            <h2 id="security-in-midtrans">Security in Midtrans</h2>
+          <div class="en-payment-link-index">
+            <h2 id="payment-link">Payment Link</h2>
+
 <hr />
 
-<h5 id="security-is-our-top-priority-in-midtrans-we-monitor-both-internal-and-external-factors-to-ensure-the-security-of-your-payment-is-going-to-midtrans"><em>Security is our top priority in Midtrans. We monitor both internal and external factors to ensure the security of your payment is going to Midtrans.</em></h5>
+<h5 id="the-tutorial-below-will-assist-you-in-integrating-payment-link-if-further-assistance-is-required-please-contact-us-at-supportmidtranscommailtosupportmidtranscom-email-support-or-visit-our-support-pagehttpsupportmidtranscom-midtrans-support"><em>The tutorial below will assist you in integrating Payment Link. If further assistance is required, please contact us at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#109;&#105;&#100;&#116;&#114;&#097;&#110;&#115;&#046;&#099;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#109;&#105;&#100;&#116;&#114;&#097;&#110;&#115;&#046;&#099;&#111;&#109;</a> or visit our <a title="Midtrans Support" href="http://support.midtrans.com">support page</a>.</em></h5>
 <hr />
 
-<h3 id="midtrans-security">Midtrans Security</h3>
+<h3 id="overview">Overview</h3>
+
+<p>Payment Link facilitates payments for you by redirecting the customer directly to Midtrans' payment page. No technical integration is required, simply create a Payment Link and send it to your customer via email or chat message. You will receive a notification once the customer has completed the payment.</p>
+
+<h3 id="creating-payment-link">Creating Payment Link</h3>
+
+<p>To create a Payment Link, click the <code>Payment Link</code> menu on the left sidebar, then click the <code>Create Payment Link</code> button.</p>
+
+<p><img alt="paymentlink new" class="img-responsive img-thumbnail" src="../../images/payment_link/paymentlink_new.png" /></p>
+
+<p>On the Create Payment Link page, the following fields are required for Link Creation:</p>
 
 <ol>
-  <li>
-    <p><strong>PCI DSS</strong><br />
- PCI-DSS (Payment Card Industry Data Security Standard) is a certificate or license issued by the PCI Security Standards Council to maintain the security of all transaction activities through Midtrans payment systems. Midtrans have implemented all security standards set by the PCI Standard Council on network and payment systems to minimize any security risk that could interfere with transaction processes in our system.</p>
-
-    <p>Midtrans has been audited by the QSA (Qualified Security Assessor) certified by PCI Council and currently Midtrans is PCI compliant with <a href="http://www.visa.com/splisting/searchGrsp.do?companyNameCriteria=midtrans">PCI Service Provider Level 1</a> certification. This is the most stringent level of certification available in the payments industry.</p>
-  </li>
-  <li>
-    <p><strong>ISO 27001</strong><br />
- ISO27001 (or commonly known as ISO / IEC 27001) is a certificate or license issued by the Internal Standards Organization (ISO) which regulates security management information system. We have implemented the ISO27001 standard on our system and network to maintain the security of our information.</p>
-  </li>
-  <li>
-    <p><strong>AES 256</strong><br />
- AES (Advanced Encryption Standard) is an encryption standard that was issued by the National Institute of Standards and Technology (NIST) it is generally used to maintain the confidentiality of data. Midtrans uses AES-256 as a standart of encryption of all transaction data that goes into and out of our system.</p>
-  </li>
-  <li>
-    <p><strong>Fraud Detection System</strong><br />
- Midtrans analyzes, processes, and manages each transactions in detail with our machine learning tool. After these steps, Midtrans will analyze the behavior patterns using the payment location,email detail, time, etc.</p>
-
-    <p>Source: <a href="https://midtrans.com/security">https://midtrans.com/security</a></p>
-  </li>
+  <li><code>Order ID</code> - Unique ID for each Payment Link. You can search for created Payment Links using this ID</li>
+  <li><code>Payment Link ID</code> - The URL address of the Payment Link, for ease of sharing</li>
+  <li><code>Usage Limit</code> - The maximum number of times the Payment Link can be used</li>
+  <li><code>Item Name</code> - The name of the product or service you are selling</li>
+  <li><code>Item Price</code> - The price of the product or service you are charging</li>
 </ol>
 
-<p><br /></p>
+<p><img alt="paymentlink create" class="img-responsive img-thumbnail" src="../../images/payment_link/paymentlink_create.png" /></p>
 
-<h3 id="https-for-secure-connections">HTTPS for secure connections</h3>
+<p>Additional options are available if (a) you want to send the Payment Link to a specific customer or (b) you want to include an expiration time and date.</p>
 
-<p>Midtrans forces HTTPS for all services using TLS (SSL), including our public website and Merchant Administration Portal.</p>
+<p><img alt="paymentlink options" class="img-responsive img-thumbnail" src="../../images/payment_link/paymentlink_options.png" /></p>
 
-<ul>
-  <li><code>midtrans.min.js</code> is served only over HTTPS and is hosted in our server (production). We suggest merchants not to host midtrans.min.js themselve.</li>
-  <li><code>snap.js</code> is served only over HTTPS and is hosted in our server (production). We suggest merchants not to host snap.js themselve.</li>
-</ul>
+<p>If the transaction is directed towards a specific customer, the Payment Link will be sent straight to the specified customer’s email address. Expiration Date is the last day the Payment Link can be used and accessed.</p>
 
-<p><br /></p>
+<h3 id="managing-payment-link">Managing Payment Link</h3>
 
-<h3 id="sensitive-data-encryption">Sensitive data Encryption</h3>
+<p>After creating the Payment Link, you will be redirected to the Payment Link List page where you can view a list of Payment Links created. You can copy and share any of your links to your customers. You can also see details and delete your links from this page.</p>
 
-<p>Security always become a primary concern in PT Midtrans and all transactions processed by our system will always be securely encrypted. Midtrans never store any sensitive information in the system and all transactions are transmitted and processed via secure network.</p>
+<p><img alt="paymentlink list" class="img-responsive img-thumbnail" src="../../images/payment_link/paymentlink_list.png" /></p>
 
-<p>All encryption and security procedure are following PCI-DSS standards to ensure that we achieved highest security protection.</p>
+<p>When you click <code>Details</code>, you will be shown a page with all of the details of the Payment Link. Here you can also view the number of <code>Orders</code> of the Payment Link and clicking the number will show you the orders on the transaction page.</p>
 
-<p><br /></p>
+<p><img alt="paymentlink details" class="img-responsive img-thumbnail" src="../../images/payment_link/paymentlink_details.png" /></p>
 
-<h3 id="vulnerability-disclosure">Vulnerability disclosure</h3>
+<h3 id="payment-link-page">Payment Link Page</h3>
 
-<p>​Midtrans is always open to any input or suggestion related to our security from. If you believe you have found a bug in Midtrans, please contact <code>security@midtrans.com</code> or <code>support@midtrans.com</code> and we will respond as soon as possible. We thank you for your cooperation in not disclosing these issues publicly.</p>
+<p>When you send the Payment Link to customers, they can open the link and it will direct them to Midtrans' Payment Page. If there is no specified customer, the customer will first need to input their details (Name, Phone, and Email) to continue. Next, the user will need to choose a payment method and follow the payment instructions. Once the customer has completed the payment, you will receive a notification of the transaction.</p>
 
 
             <div class="pagination">
-              <ul><li class="left">« Previous: <a href="address.html">Reference : IP Adresses</a></li><li class="right">Next: <a href="https://status.midtrans.com">Reference : System Status</a> »</li></ul>
+              <ul><li class="left">« Previous: <a href="https://mobile-docs.midtrans.com">Mobile SDK : Integration</a></li><li class="right">Next: <a href="https://api-docs.midtrans.com">Core API : Core API</a> »</li></ul>
             </div>
           </div>
         </div><!--/span-->
